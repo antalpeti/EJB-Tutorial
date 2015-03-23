@@ -5,6 +5,7 @@
  */
 package com.javacodegeeks.example.service;
 
+import com.javacodegeeks.example.entity.Customer;
 import javax.ejb.Stateless;
 
 /**
@@ -16,4 +17,9 @@ public class AccountService implements AccountServiceRemote {
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
+    
+    @Override
+    public Customer createAccount(String firstName, String lastName) {
+        return null;
+    }
 }

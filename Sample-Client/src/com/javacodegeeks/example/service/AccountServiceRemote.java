@@ -5,6 +5,7 @@
  */
 package com.javacodegeeks.example.service;
 
+import com.javacodegeeks.example.entity.Customer;
 import javax.ejb.Remote;
 
 /**
@@ -13,5 +14,7 @@ import javax.ejb.Remote;
  */
 @Remote
 public interface AccountServiceRemote {
+
+    Customer createAccount(String firstName, String lastName);
     
 }
