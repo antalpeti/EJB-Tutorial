@@ -22,6 +22,10 @@ public class Customer implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String firstName;
+
+    private String lastName;
+
     public Long getId() {
         return id;
     }
@@ -54,5 +58,20 @@ public class Customer implements Serializable {
     public String toString() {
         return "com.javacodegeeks.example.entity.Customer[ id=" + id + " ]";
     }
-    
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
